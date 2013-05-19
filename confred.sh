@@ -13,7 +13,7 @@ fi
 echo "¿Desea crear un archivo de configuración nuevo? y/n"
 read conf
 if [ $conf = 'y' ];then
-	echo auto lo"\n"iface lo inet loopback"\n"address 172.0.0.1"\n"netmask 255.0.0.0 > /etc/network/interfaces
+	echo auto lo"\n"iface lo inet loopback"\n"address 127.0.0.1"\n"netmask 255.0.0.0 > /etc/network/interfaces
 fi
 while [ $reload = 'y' ]
 	do
